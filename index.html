@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANCONS S.A.C. | Constructora, Consultora de Ingeniería y Laboratorios</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="MANCONS S.A.C. - Constructora, Consultora de Ingeniería y Laboratorios en Juliaca, Puno, Perú. Especialistas en expedientes técnicos, mecánica de suelos, diseño estructural y tecnología BIM.">
+  <meta name="keywords" content="MANCONS, MANCONS S.A.C., Constructora Juliaca, Consultora de Ingenieria Puno, Mecanica de Suelos, Ensayos de Laboratorio, Expedientes Tecnicos, Diseno Estructural, BIM, AASHTO LRFD">
+  <meta name="author" content="MANCONS S.A.C.">
+  <meta name="theme-color" content="#7A0019">
+  <link rel="canonical" href="https://mancons.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/nuevo_logo_mancons.png">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:title" content="MANCONS S.A.C. | Constructora, Consultora y Laboratorios">
+  <meta property="og:description" content="Ingeniería, tecnología e innovación para el desarrollo de proyectos de infraestructura y edificaciones en el Perú.">
+  <meta property="og:url" content="https://mancons.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/mancons_hero_banner.png">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cinematic.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Ambient Particles & Floating Dust Canvas (Granate & Oro) -->
+  <canvas id="ambientDustCanvas"></canvas>
+
+  <!-- Custom Cinematic Mouse Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- CinemaScope 2.39:1 Letterbox Matte Bars -->
+  <div class="cinemascope-matte-top"></div>
+  <div class="cinemascope-matte-bottom"></div>
+
+  <!-- SITE NAVIGATION HEADER -->
+  <header class="site-nav">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" title="MANCONS S.A.C. - Inicio">
+        <img src="assets/images/nuevo_logo_mancons.png" alt="MANCONS S.A.C. Logo" class="logo-img">
+        <span class="brand-text">MANCONS</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#laboratorio" class="nav-link">Laboratorio</a></li>
+          <li><a href="#digital" class="nav-link">BIM / Digital</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#tiktok" class="nav-link">TikTok</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Procedural Web Audio Ambience Toggle -->
+        <button class="btn-sound" title="Sonido Atmosférico de Precisión">
+          <div class="sound-bars">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="sound-text">AUDIO: OFF</span>
+        </button>
+
+        <a href="#contacto" class="btn-primary">Cotizar Proyecto</a>
+
+        <button class="menu-toggle" aria-label="Abrir Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION CON VIDEO DE FONDO Y TELEMETRÍA DE INGENIERÍA -->
+  <section id="hero" class="hero-section">
+    <!-- Camera Viewfinder HUD Guides -->
+    <div class="camera-hud-frame">
+      <div class="hud-corner hud-corner-tl"></div>
+      <div class="hud-corner hud-corner-tr"></div>
+      <div class="hud-corner hud-corner-bl"></div>
+      <div class="hud-corner hud-corner-br"></div>
+      <div class="hud-crosshair"></div>
+
+      <!-- Live Dual-Channel Audio VU Level Meter -->
+      <div class="hud-audio-meter">
+        <div class="vu-channel">
+          <span class="vu-channel-name">CH 1</span>
+          <div class="vu-bars-track" id="vuTrack1">
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led yellow active"></span>
+            <span class="vu-led yellow"></span>
+            <span class="vu-led red"></span>
+          </div>
+        </div>
+        <div class="vu-channel">
+          <span class="vu-channel-name">CH 2</span>
+          <div class="vu-bars-track" id="vuTrack2">
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led green active"></span>
+            <span class="vu-led yellow active"></span>
+            <span class="vu-led yellow"></span>
+            <span class="vu-led red"></span>
+            <span class="vu-led red"></span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Telemetry Bottom Info -->
+      <div class="hud-telemetry">
+        <div class="telemetry-item">SEDE: <span>JULIACA • PUNO • PERÚ</span></div>
+        <div class="telemetry-item">NORMATIVA: <span>RNE E.030 / E.060 / AASHTO</span></div>
+        <div class="telemetry-item">DIVISIÓN: <span>INGENIERÍA · SUELOS · BIM</span></div>
+        <div class="telemetry-item">ESTADO: <span>OPERATIVO 2026</span></div>
+      </div>
+    </div>
+
+    <!-- Anamorphic Lens Flare Line -->
+    <div class="lens-flare-streak"></div>
+
+    <!-- Hero Video Background -->
+    <div class="hero-video-wrapper">
+      <video autoplay muted loop playsinline poster="assets/images/mancons_hero_banner.png">
+        <source src="assets/videos/mancons_drone_obra.mp4" type="video/mp4">
+        <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="rec-hud-pill">
+        <span class="rec-dot"></span>
+        <span class="rec-text">MANCONS S.A.C.</span>
+        <span class="rec-divider">|</span>
+        <span class="rec-timecode">INGENIERÍA & INNOVACIÓN</span>
+      </div>
+
+      <h1 class="hero-title">
+        CONSTRUIMOS SOLUCIONES. <br>
+        <span class="glow-word">DISEÑAMOS EL FUTURO.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Constructora, Consultora de Ingeniería y Laboratorios. Integramos consultoría técnica, 
+        mecánica de suelos, diseño sismorresistente y modelado BIM de vanguardia para proyectos de infraestructura en el Perú.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#showreel" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          Ver Showreel Técnico
+        </a>
+        <a href="#servicios" class="btn-secondary">
+          Explorar Servicios
+        </a>
+      </div>
+    </div>
+
+    <a href="#showreel" class="hero-scroll-cue" aria-label="Desplazarse abajo">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-icon"></div>
+    </a>
+  </section>
+
+  <!-- FEATURED SHOWREEL SECTION (CUSTOM VIDEO PLAYER CON MULTI-PISTA REAL) -->
+  <section id="showreel" class="section">
+    <div class="section-header">
+      <span class="section-tag">CAPACIDAD OPERATIVA Y TECNOLÓGICA</span>
+      <h2 class="section-title">SHOWCASE AUDIOVISUAL DE INGENIERÍA</h2>
+      <p class="section-desc">
+        Visualiza en acción nuestros procesos de modelado BIM 3D, inspección con vehículos aéreos no tripulados (drones) y control de obra en campo.
+      </p>
+    </div>
+
+    <div class="showreel-stage-container" id="showreelPlayer">
+      <!-- Reactive Ambilight Halo -->
+      <div class="stage-ambilight"></div>
+
+      <!-- Player Frame -->
+      <div class="player-card">
+        <div class="video-frame">
+          <video id="mainVideo" playsinline poster="assets/images/mancons_hero_banner.png">
+            <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+          </video>
+
+          <!-- Big Play Button Overlay -->
+          <button class="big-play-btn" aria-label="Reproducir Video">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+
+          <!-- Custom Player Controls Bar -->
+          <div class="custom-player-controls">
+            <!-- Scrubber Timeline -->
+            <div class="timeline-scrubber" title="Adelantar / Retroceder">
+              <div class="scrub-buffer"></div>
+              <div class="scrub-progress">
+                <span class="scrub-handle"></span>
+              </div>
+            </div>
+
+            <!-- Controls Row -->
+            <div class="controls-row">
+              <div class="controls-left">
+                <button class="ctrl-btn" id="ctrlPlayBtn" aria-label="Play / Pausa">
+                  <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+
+                <div class="volume-control-wrap">
+                  <button class="ctrl-btn" id="muteBtn" aria-label="Silenciar">
+                    <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                  </button>
+                  <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.05" value="1">
+                </div>
+
+                <div class="time-display">
+                  <span class="current-time">00:00</span> / 00:30
+                </div>
+              </div>
+
+              <div class="controls-right">
+                <button class="scope-toggle-btn" id="scopeToggle" title="Cambiar Formato de Pantalla">
+                  16:9 NATIVE
+                </button>
+                <button class="scope-toggle-btn" id="cinemaModeBtn" title="Modo Cine con Barras Negras">
+                  CINEMA MODE
+                </button>
+                <button class="ctrl-btn" id="fullscreenBtn" aria-label="Pantalla Completa">
+                  <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playlist Video Switcher con Videos Reales -->
+      <div class="playlist-tabs">
+        <button class="playlist-item active" data-video="assets/videos/mancons_bim_reel.mp4" data-poster="assets/images/mancons_hero_banner.png">
+          <div class="playlist-thumb-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="playlist-info">
+            <h4>01. Modelado & Coordinación BIM</h4>
+            <p>Estructuras, Arquitectura & MEP 3D</p>
+          </div>
+        </button>
+
+        <button class="playlist-item" data-video="assets/videos/mancons_drone_obra.mp4" data-poster="assets/images/mancons_proyecto_1.png">
+          <div class="playlist-thumb-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="playlist-info">
+            <h4>02. Supervisión de Obra en Campo</h4>
+            <p>Inspección Aérea y Control Civil</p>
+          </div>
+        </button>
+
+        <button class="playlist-item" data-video="assets/videos/hero-showreel.mp4" data-poster="assets/images/mancons_laboratorio.jpg">
+          <div class="playlist-thumb-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="playlist-info">
+            <h4>03. Ensayos y Geotecnia</h4>
+            <p>Control de Calidad de Materiales</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS / PERFIL INSTITUCIONAL -->
+  <section id="nosotros" class="section">
+    <div class="section-header">
+      <span class="section-tag">PERFIL INSTITUCIONAL</span>
+      <h2 class="section-title">INGENIERÍA RIGUROSA, CALIDAD E INNOVACIÓN</h2>
+      <p class="section-desc">
+        Soluciones integrales fundamentadas en criterios de seguridad estructural, eficiencia constructiva y sostenibilidad.
+      </p>
+    </div>
+
+    <div class="studio-grid" style="grid-template-columns: 1.1fr 1fr; margin-bottom: 3.5rem;">
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <h3 style="font-family: var(--font-display); font-size: 1.85rem; color: #fff; line-height: 1.25;">
+          ¿Quiénes somos?
+        </h3>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+          <strong style="color: #fff;">MANCONS S.A.C.</strong> es una empresa peruana orientada al desarrollo de soluciones integrales 
+          de ingeniería civil, construcción, consultoría técnica y estudios de laboratorio, con sede de operaciones en Juliaca, San Román, Puno.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+          Nuestra propuesta integra conocimientos técnicos especializados, normativa sismorresistente vigente y tecnologías digitales para contribuir al éxito 
+          de proyectos de infraestructura pública y privada, garantizando la seguridad, durabilidad y optimización de recursos.
+        </p>
+      </div>
+
+      <!-- Imagen institucional real -->
+      <div style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(196, 18, 48, 0.3); box-shadow: 0 15px 40px rgba(0,0,0,0.7);">
+        <img src="assets/images/mancons_hero_banner.png" alt="MANCONS S.A.C. Equipo e Infraestructura" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+
+    <!-- Las 3 Áreas Estratégicas de MANCONS -->
+    <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 4rem;">
+      <div class="spec-item" style="flex-direction: column; padding: 2.2rem; border-left-color: var(--color-crimson);">
+        <span class="section-tag" style="margin-bottom: 0.6rem;">ÁREA 01</span>
+        <h4 style="font-family: var(--font-display); font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem;">MANCONS Ingeniería & Construcción</h4>
+        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.7;">
+          Consultoría técnica, elaboración de expedientes técnicos integrales, diseño estructural sismorresistente, supervisión y ejecución de obras civiles y edificaciones.
+        </p>
+      </div>
+
+      <div class="spec-item" style="flex-direction: column; padding: 2.2rem; border-left-color: var(--color-gold);">
+        <span class="section-tag" style="margin-bottom: 0.6rem;">ÁREA 02</span>
+        <h4 style="font-family: var(--font-display); font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem;">MANCONS Laboratorios</h4>
+        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.7;">
+          Estudios geotécnicos, exploración de calicatas, mecánica de suelos, ensayos de laboratorio de mecánica de materiales y control de calidad bajo normas ASTM y MTC.
+        </p>
+      </div>
+
+      <div class="spec-item" style="flex-direction: column; padding: 2.2rem; border-left-color: var(--color-gold);">
+        <span class="section-tag" style="margin-bottom: 0.6rem;">ÁREA 03</span>
+        <h4 style="font-family: var(--font-display); font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem;">MANCONS Digital / BIM</h4>
+        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.7;">
+          Modelado BIM interdisciplinario, visualización 3D interactiva, realidad aumentada (AR/VR), software especializado de cálculo y automatización de procesos de ingeniería.
+        </p>
+      </div>
+    </div>
+
+    <!-- Misión, Visión y Valores -->
+    <div class="studio-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div class="metric-card" style="text-align: left; padding: 2rem;">
+        <h4 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--color-gold); margin-bottom: 0.75rem;">
+          🎯 Nuestra Misión
+        </h4>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Brindar soluciones integrales de ingeniería civil mediante servicios de consultoría, diseño, construcción y laboratorio, incorporando herramientas tecnológicas y criterios técnicos que contribuyan a la calidad, seguridad y eficiencia de los proyectos.
+        </p>
+      </div>
+
+      <div class="metric-card" style="text-align: left; padding: 2rem;">
+        <h4 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--color-crimson); margin-bottom: 0.75rem;">
+          👁️ Nuestra Visión
+        </h4>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Consolidarnos como una empresa de ingeniería reconocida por la calidad de sus servicios, la innovación tecnológica y su contribución al desarrollo sostenible de la infraestructura en el Perú.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO DE SERVICIOS DE INGENIERÍA -->
+  <section id="servicios" class="section">
+    <div class="section-header">
+      <span class="section-tag">CATÁLOGO DE ESPECIALIDADES</span>
+      <h2 class="section-title">SERVICIOS INTEGRALES DE INGENIERÍA</h2>
+      <p class="section-desc">
+        Acompañamiento técnico riguroso en cada etapa del ciclo de vida del proyecto, desde los estudios preliminares hasta la entrega de obra.
+      </p>
+    </div>
+
+    <div class="project-grid">
+      <!-- Servicio 1 -->
+      <div class="project-card" style="padding: 2rem;">
+        <span class="card-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">ESPECIALIDAD 01</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem;">Consultoría & Expedientes Técnicos</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+          Elaboración integral de expedientes técnicos, perfiles de inversión pública y privada, memorias descriptivas, especificaciones técnicas, metrados, análisis de costos unitarios (ACU) y cronogramas de obra.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
+          Normativa Invierte.pe • Ley de Contrataciones
+        </div>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="project-card" style="padding: 2rem;">
+        <span class="card-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">ESPECIALIDAD 02</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem;">Análisis & Diseño Estructural</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+          Análisis sísmico modal espectral, diseño de elementos de concreto armado, cimentaciones superficiales y profundas, estructuras metálicas, memorias de cálculo analíticas y evaluación de vulnerabilidad estructural.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
+          RNE E.020 • E.030 • E.050 • E.060
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="project-card" style="padding: 2rem;">
+        <span class="card-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">ESPECIALIDAD 03</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem;">Mecánica de Suelos & Geotecnia</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+          Estudios geotécnicos con fines de cimentación, excavación de calicatas, muestreo inalterado, ensayos de granulometría, límites de Atterberg, capacidad portante admisible y cálculo de asentamientos.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
+          Normas ASTM • MTC • RNE E.050
+        </div>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="project-card" style="padding: 2rem;">
+        <span class="card-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">ESPECIALIDAD 04</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem;">Construcción & Ejecución de Obras</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+          Construcción de edificaciones multifamiliares, infraestructura educativa, proyectos de agua potable y saneamiento básico, pavimentaciones rígidas y flexibles, y obras civiles con estricto control de calidad.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
+          Seguridad en Obra G.050 • Calidad Total
+        </div>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="project-card" style="padding: 2rem;">
+        <span class="card-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">ESPECIALIDAD 05</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem;">Modelado BIM & Coordinación Digital</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+          Modelado tridimensional en arquitectura, estructuras e instalaciones MEP, detección temprana de interferencias (clash detection), compatibilización de planos y extracción automatizada de cantidades y metrados.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
+          Estándar BIM Perú • ISO 19650
+        </div>
+      </div>
+
+      <!-- Servicio 6 -->
+      <div class="project-card" style="padding: 2rem;">
+        <span class="card-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">ESPECIALIDAD 06</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #fff; margin-bottom: 0.75rem;">Desarrollo Tecnológico & Software</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;">
+          Creación de software de ingeniería estructural (diseño de puentes bajo normativa AASHTO LRFD), desarrollo de visores de realidad aumentada (AR) para campo y automatización de procesos mediante Python y APIs de ingeniería.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-gold);">
+          AASHTO LRFD • Three.js • Revit API
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN ESPECIAL: MANCONS DIGITAL & INNOVACIÓN -->
+  <section id="digital" class="section">
+    <div class="section-header">
+      <span class="section-tag">TECNOLOGÍA DIFERENCIADORA</span>
+      <h2 class="section-title">MANCONS DIGITAL & APLICACIONES</h2>
+      <p class="section-desc">
+        Conectamos la ingeniería civil tradicional con el poder de la visualización inmersiva, algoritmos de cálculo y software especializado desarrollado por nuestro equipo.
+      </p>
+    </div>
+
+    <div class="studio-grid" style="margin-bottom: 3rem;">
+      <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glow); box-shadow: 0 15px 40px rgba(0,0,0,0.85);">
+        <img src="assets/images/mancons_bim_render.png" alt="MANCONS BIM Viewer & AR" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div class="studio-specs-list">
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div>
+            <h5>MANCONS AR / BIM Viewer</h5>
+            <p>Plataforma para interactuar y visualizar modelos BIM directamente en obra mediante realidad aumentada, facilitando el control de montaje y la detección in situ de interferencias.</p>
+          </div>
+        </div>
+
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+            </svg>
+          </div>
+          <div>
+            <h5>MANCONS Bridge Designer (AASHTO LRFD)</h5>
+            <p>Software computacional para análisis y diseño de superestructuras de puentes tipo viga-losa y losa continua con generación instantánea de memorias de cálculo y líneas de influencia.</p>
+          </div>
+        </div>
+
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/>
+            </svg>
+          </div>
+          <div>
+            <h5>Modelos de Machine Learning Estructural</h5>
+            <p>Algoritmos de aprendizaje automático para la predicción de vulnerabilidad sísmica y clasificación de daño estructural en edificaciones existentes en la región sur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN LABORATORIOS & ENSAYOS DE SUELOS -->
+  <section id="laboratorio" class="section">
+    <div class="section-header">
+      <span class="section-tag">DIVISIÓN GEOTÉCNICA</span>
+      <h2 class="section-title">LABORATORIO DE MECÁNICA DE SUELOS & MATERIALES</h2>
+      <p class="section-desc">
+        Ensayos normados bajo estándares ASTM, MTC y RNE E.050 para certificar la capacidad portante y aptitud de los suelos de cimentación.
+      </p>
+    </div>
+
+    <div class="studio-grid" style="grid-template-columns: 1fr 1.2fr; gap: 2.5rem; align-items: start;">
+      <div style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(229, 169, 60, 0.35); box-shadow: 0 15px 40px rgba(0,0,0,0.7);">
+        <img src="assets/images/mancons_laboratorio.jpg" alt="Ensayos de Suelos y Materiales MANCONS" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+        <h4 style="font-family: var(--font-display); font-size: 1.4rem; color: #fff;">Ensayos de Laboratorio Acreditados</h4>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Contamos con equipamiento para la caracterización física y mecánica de suelos, asegurando parámetros de diseño confiables para ingenieros proyectistas y constructores.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
+          <div style="background: rgba(38, 20, 27, 0.8); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <strong style="display: block; color: var(--color-gold); font-size: 0.85rem; font-family: var(--font-mono);">ASTM D422 / MTC E107</strong>
+            <span style="font-size: 0.9rem; color: #fff;">Granulometría por Tamizado</span>
+          </div>
+          <div style="background: rgba(38, 20, 27, 0.8); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <strong style="display: block; color: var(--color-gold); font-size: 0.85rem; font-family: var(--font-mono);">ASTM D4318 / MTC E111</strong>
+            <span style="font-size: 0.9rem; color: #fff;">Límites de Atterberg (LL, LP, IP)</span>
+          </div>
+          <div style="background: rgba(38, 20, 27, 0.8); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <strong style="display: block; color: var(--color-gold); font-size: 0.85rem; font-family: var(--font-mono);">ASTM D2216 / MTC E108</strong>
+            <span style="font-size: 0.9rem; color: #fff;">Contenido de Humedad Natural</span>
+          </div>
+          <div style="background: rgba(38, 20, 27, 0.8); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <strong style="display: block; color: var(--color-gold); font-size: 0.85rem; font-family: var(--font-mono);">ASTM D1557 / MTC E115</strong>
+            <span style="font-size: 0.9rem; color: #fff;">Proctor Modificado & Densidad</span>
+          </div>
+        </div>
+
+        <a href="#contacto" class="btn-primary" style="align-self: flex-start; margin-top: 1rem;">
+          Solicitar Cotización de Ensayos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE COMPARATOR: MODELADO BIM vs OBRA REAL -->
+  <section id="comparador" class="section">
+    <div class="section-header">
+      <span class="section-tag">COMPATIBILIZACIÓN TÉCNICA</span>
+      <h2 class="section-title">CONTROL INTEGRAL: DISEÑO BIM VS. REALIDAD EN CAMPO</h2>
+      <p class="section-desc">
+        Arrastra el separador para comparar la precisión del modelo estructural digital frente a la ejecución constructiva en terreno.
+      </p>
+    </div>
+
+    <div class="scrub-studio-box">
+      <div class="studio-grid">
+        <!-- Split Grade Slider adaptado a BIM vs Obra -->
+        <div class="split-slider-container" id="gradeSplitSlider">
+          <!-- Layer Obra (Background) -->
+          <div class="split-layer layer-raw">
+            <span class="split-badge badge-raw">EJECUCIÓN EN CAMPO</span>
+            <img src="assets/images/mancons_proyecto_2.png" alt="Obra de Edificación Real en Juliaca">
+          </div>
+
+          <!-- Layer BIM 3D (Foreground clipped) -->
+          <div class="split-layer layer-graded">
+            <span class="split-badge badge-graded">MODELO DIGITAL BIM 3D</span>
+            <img src="assets/images/mancons_bim_render.png" alt="Modelo Estructural BIM 3D">
+          </div>
+
+          <!-- Draggable Divider Handle -->
+          <div class="split-handle" title="Arrastra para comparar">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 7l-5 5 5 5V7zm8 0v10l5-5-5-5z"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- DaVinci & Engineering Technical Scopes Simulator -->
+        <div class="scopes-display-wrapper">
+          <div class="scopes-header">
+            <span>BIM TELEMETRY // TOLERANCIAS Y CUANTIFICACIÓN 3D</span>
+            <span>ERROR MARGIN: &lt; 0.5% • ISO 19650 CALIBRATED</span>
+          </div>
+          <div class="scopes-bars-grid">
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+            <span class="scope-bar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO FILTERABLE PROJECTS GRID (PROYECTOS TÉCNICOS REALES DEL DOSSIER) -->
+  <section id="proyectos" class="section">
+    <div class="section-header">
+      <span class="section-tag">EXPERIENCIA TÉCNICA</span>
+      <h2 class="section-title">PROYECTOS Y TRABAJOS DESTACADOS</h2>
+      <p class="section-desc">
+        Catálogo de estudios geotécnicos, proyectos de saneamiento, diseño de edificaciones y desarrollos tecnológicos.
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">Todos (6)</button>
+      <button class="filter-btn" data-filter="edif">Edificaciones & Estructuras</button>
+      <button class="filter-btn" data-filter="suelos">Geotecnia & Suelos</button>
+      <button class="filter-btn" data-filter="saneamiento">Saneamiento & Civil</button>
+      <button class="filter-btn" data-filter="software">BIM & Software</button>
+    </div>
+
+    <!-- Projects Grid con Fotos Reales Extraídas -->
+    <div class="project-grid">
+      
+      <!-- Card 1: Saneamiento -->
+      <article class="project-card" data-category="saneamiento" data-full-video="assets/videos/mancons_drone_obra.mp4" data-desc="Elaboración y participación técnica en la documentación para el sistema de agua potable, alcantarillado sanitario y tratamiento de aguas residuales en el entorno UPeU Juliaca (CUI 2500675).">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mancons_proyecto_1.png" alt="Abastecimiento de Agua Potable y Alcantarillado UPeU" loading="lazy">
+          <video muted loop playsinline preload="none">
+            <source src="assets/videos/mancons_drone_obra.mp4" type="video/mp4">
+          </video>
+          <span class="card-badge">CUI 2500675</span>
+          <span class="card-specs">SANEAMIENTO INTEGRAL</span>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Agua Potable & Alcantarillado UPeU</h3>
+          <p class="card-category">Obras Civiles • Saneamiento Básico</p>
+          <div class="card-footer">
+            <span>Ubicación: Juliaca, Puno</span>
+            <span class="view-btn-text">
+              Ver Ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Geotecnia Howards -->
+      <article class="project-card" data-category="suelos" data-full-video="assets/videos/mancons_bim_reel.mp4" data-desc="Estudio geotécnico con fines de cimentación para la Institución Educativa Howards, Puno. Comprende exploración de campo mediante calicatas, muestreo estratigráfico y ensayos estándar de laboratorio.">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mancons_laboratorio.jpg" alt="Expediente Geotécnico I.E. Howards" loading="lazy">
+          <video muted loop playsinline preload="none">
+            <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+          </video>
+          <span class="card-badge">GEOTECNIA CERTIFICADA</span>
+          <span class="card-specs">CALICATAS • ASTM D422</span>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Expediente Geotécnico I.E. Howards</h3>
+          <p class="card-category">Mecánica de Suelos • Estudio Técnico</p>
+          <div class="card-footer">
+            <span>Ubicación: Puno, Perú</span>
+            <span class="view-btn-text">
+              Ver Ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Edificación 5 Niveles -->
+      <article class="project-card" data-category="edif" data-full-video="assets/videos/mancons_bim_reel.mp4" data-desc="Modelado tridimensional, análisis modal espectral y diseño de elementos de concreto armado (vigas, columnas, muros de corte y losas aligeradas) para edificación de 5 pisos bajo la norma sismorresistente E.030.">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mancons_proyecto_2.png" alt="Edificación de Cinco Niveles Juliaca" loading="lazy">
+          <video muted loop playsinline preload="none">
+            <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+          </video>
+          <span class="card-badge">5 NIVELES</span>
+          <span class="card-specs">ETABS • RNE E.030 / E.060</span>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Edificación de Cinco Niveles</h3>
+          <p class="card-category">Diseño Estructural • Concreto Armado</p>
+          <div class="card-footer">
+            <span>Ubicación: Juliaca, San Román</span>
+            <span class="view-btn-text">
+              Ver Ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4: Software Puentes AASHTO -->
+      <article class="project-card" data-category="software" data-full-video="assets/videos/mancons_bim_reel.mp4" data-desc="Desarrollo de algoritmos de cálculo para el análisis y diseño de superestructuras de puentes tipo losa y viga-losa bajo la norma internacional AASHTO LRFD Bridge Design Specifications.">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mancons_bim_render.png" alt="MANCONS Bridge Designer AASHTO LRFD" loading="lazy">
+          <video muted loop playsinline preload="none">
+            <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+          </video>
+          <span class="card-badge">AASHTO LRFD 9TH</span>
+          <span class="card-specs">VEHÍCULO HL-93 • DFC / DMF</span>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">MANCONS Bridge Designer</h3>
+          <p class="card-category">Software de Ingeniería • Puentes</p>
+          <div class="card-footer">
+            <span>Desarrollo Propio MANCONS</span>
+            <span class="view-btn-text">
+              Ver Ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5: Visor BIM / AR Mobile -->
+      <article class="project-card" data-category="software" data-full-video="assets/videos/mancons_bim_reel.mp4" data-desc="Aplicación móvil nativa para Android y Windows que permite visualizar modelos BIM de estructuras e instalaciones en 3D interactivo y realidad aumentada en el lugar de la obra.">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mancons_logo_emblema.png" alt="MANCONS Visor BIM AR" loading="lazy">
+          <video muted loop playsinline preload="none">
+            <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+          </video>
+          <span class="card-badge">AR / BIM VIEWER</span>
+          <span class="card-specs">UNITY • REVIT IFC</span>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">MANCONS AR / BIM Viewer</h3>
+          <p class="card-category">Realidad Aumentada • Control de Obra</p>
+          <div class="card-footer">
+            <span>Innovación Digital</span>
+            <span class="view-btn-text">
+              Ver Ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6: ML Vulnerabilidad Sísmica -->
+      <article class="project-card" data-category="edif" data-full-video="assets/videos/mancons_drone_obra.mp4" data-desc="Motor de Inteligencia Artificial y Machine Learning entrenado con datos estructurales para predecir el índice de daño y nivel de riesgo sísmico en edificaciones de albañilería y concreto armado.">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mancons_hero_banner.png" alt="Motor ML Vulnerabilidad Sísmica" loading="lazy">
+          <video muted loop playsinline preload="none">
+            <source src="assets/videos/mancons_drone_obra.mp4" type="video/mp4">
+          </video>
+          <span class="card-badge">MACHINE LEARNING</span>
+          <span class="card-specs">PYTHON • MODELO ML</span>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Evaluación Sísmica Inteligente</h3>
+          <p class="card-category">Ingeniería Sísmica • Algoritmos AI</p>
+          <div class="card-footer">
+            <span>Investigación & Desarrollo</span>
+            <span class="view-btn-text">
+              Ver Ficha
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN TIKTOK: CONTENIDO DINÁMICO EN VIVO DESDE OBRA -->
+  <section id="tiktok" class="section" style="padding-top: 2rem;">
+    <div class="section-header">
+      <span class="section-tag" style="background: rgba(254, 44, 85, 0.12); border-color: rgba(254, 44, 85, 0.4); color: #fe2c55;">// CONTENIDO EN VIVO @MANCONS.SAC</span>
+      <h2 class="section-title">MANCONS EN TIKTOK: LA INGENIERÍA EN ACCIÓN</h2>
+      <p class="section-desc">
+        ¿Quieres ver más de nuestro trabajo diario en campo y oficina? En nuestra cuenta oficial de TikTok publicamos recorridos de obra con dron, procesos de modelado BIM en Revit, ensayos de suelos y software de cálculo estructural.
+      </p>
+    </div>
+
+    <!-- TikTok Reels Grid (Vertical 9:16 Cards) -->
+    <div class="tiktok-reels-grid">
+      
+      <!-- TikTok Card 1 -->
+      <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="tiktok-reel-card">
+        <video class="tiktok-reel-video" muted loop playsinline poster="assets/images/mancons_proyecto_1.png">
+          <source src="assets/videos/mancons_drone_obra.mp4" type="video/mp4">
+        </video>
+        <div class="tiktok-play-badge">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="tiktok-overlay-content">
+          <span class="tiktok-user-tag">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            @mancons.sac
+          </span>
+          <h4 class="tiktok-reel-title">Vuelo de Dron y Supervisión de Obra Civil</h4>
+          <p class="tiktok-hashtags">#IngenieriaCivil #Juliaca #ObrasCiviles #Topografia</p>
+          <div class="tiktok-stats-bar">
+            <span>❤️ Ver en TikTok</span>
+            <span>💬 Disponible</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- TikTok Card 2 -->
+      <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="tiktok-reel-card">
+        <video class="tiktok-reel-video" muted loop playsinline poster="assets/images/mancons_hero_banner.png">
+          <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+        </video>
+        <div class="tiktok-play-badge">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="tiktok-overlay-content">
+          <span class="tiktok-user-tag">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            @mancons.sac
+          </span>
+          <h4 class="tiktok-reel-title">Modelado BIM & Detección de Interferencias</h4>
+          <p class="tiktok-hashtags">#BIM #Revit #Estructuras #Arquitectura3D</p>
+          <div class="tiktok-stats-bar">
+            <span>❤️ Ver en TikTok</span>
+            <span>💬 Disponible</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- TikTok Card 3 -->
+      <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="tiktok-reel-card">
+        <video class="tiktok-reel-video" muted loop playsinline poster="assets/images/mancons_laboratorio.jpg">
+          <source src="assets/videos/hero-showreel.mp4" type="video/mp4">
+        </video>
+        <div class="tiktok-play-badge">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="tiktok-overlay-content">
+          <span class="tiktok-user-tag">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            @mancons.sac
+          </span>
+          <h4 class="tiktok-reel-title">Ensayos Geotécnicos & Mecánica de Suelos</h4>
+          <p class="tiktok-hashtags">#Geotecnia #Calicatas #Suelos #ASTM</p>
+          <div class="tiktok-stats-bar">
+            <span>❤️ Ver en TikTok</span>
+            <span>💬 Disponible</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- TikTok Card 4 -->
+      <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="tiktok-reel-card">
+        <video class="tiktok-reel-video" muted loop playsinline poster="assets/images/mancons_bim_render.png">
+          <source src="assets/videos/mancons_bim_reel.mp4" type="video/mp4">
+        </video>
+        <div class="tiktok-play-badge">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="tiktok-overlay-content">
+          <span class="tiktok-user-tag">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            @mancons.sac
+          </span>
+          <h4 class="tiktok-reel-title">Diseño de Puentes AASHTO LRFD</h4>
+          <p class="tiktok-hashtags">#Puentes #AASHTO #CalculoEstructural</p>
+          <div class="tiktok-stats-bar">
+            <span>❤️ Ver en TikTok</span>
+            <span>💬 Disponible</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Big TikTok Profile Follow Button -->
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="btn-primary" style="background: linear-gradient(135deg, #7A0019 0%, #C41230 45%, #E5A93C 100%); color: #fff; box-shadow: 0 4px 25px rgba(229, 169, 60, 0.4);">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        <span>Seguir en TikTok (@mancons.sac) • Ver Más Contenido Exclusivo</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- MÉTRICAS DE IMPACTO Y RESPALDO -->
+  <section class="metrics-section">
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-number" data-target="15000" data-suffix=" m²" data-prefix="+">0</div>
+        <div class="metric-label">Área Diseñada y Modelada</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number" data-target="100" data-suffix="%">0</div>
+        <div class="metric-label">Rigor Normativo (RNE / ASTM)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number" data-target="3" data-suffix=" Divisiones">0</div>
+        <div class="metric-label">Construcción · Laboratorio · BIM</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-number" data-target="24" data-suffix="/7">0</div>
+        <div class="metric-label">Compromiso Técnico con el Cliente</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO & COTIZACIONES -->
+  <section id="contacto" class="section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <span class="section-tag">ATENCIÓN PERSONALIZADA</span>
+        <h3>SOLICITA TU COTIZACIÓN TÉCNICA</h3>
+        <p>
+          Conversemos sobre tu proyecto. Elaboramos cotizaciones detalladas para expedientes técnicos, ensayos de mecánica de suelos, cálculos estructurales y modelado BIM.
+        </p>
+
+        <div class="contact-methods">
+          <div class="contact-method-item">
+            <div class="contact-method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Sede de Operaciones</span>
+              <strong>Juliaca, San Román, Puno, Perú</strong>
+            </div>
+          </div>
+
+          <div class="contact-method-item">
+            <div class="contact-method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Correo Electrónico Oficial</span>
+              <a href="mailto:mancons.sac@gmail.com" style="color: #fff; font-weight: 600;">mancons.sac@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- YouTube Oficial -->
+          <div class="contact-method-item">
+            <div class="contact-method-icon" style="background: rgba(255, 0, 0, 0.15); color: #ff3333;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Canal Oficial de YouTube</span>
+              <a href="https://www.youtube.com/@MANCONSCONSTRUCTORA" target="_blank" rel="noopener" style="color: #ff4444; font-weight: 600;">
+                @MANCONSCONSTRUCTORA
+              </a>
+            </div>
+          </div>
+
+          <!-- TikTok Oficial -->
+          <div class="contact-method-item">
+            <div class="contact-method-icon" style="background: rgba(254, 44, 85, 0.15); color: #fe2c55;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <span>TikTok Oficial</span>
+              <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" style="color: #fe2c55; font-weight: 600;">
+                @mancons.sac
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-method-item">
+            <div class="contact-method-icon" style="background: rgba(37, 211, 102, 0.15); color: #25D366;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+            </div>
+            <div class="contact-method-text">
+              <span>Atención Rápida por WhatsApp</span>
+              <a href="https://wa.me/51917508001?text=Hola%20MANCONS%20S.A.C.,%20deseo%20cotizar%20un%20servicio%20de%20ingenier%C3%ADa" target="_blank" rel="noopener" style="color: #25D366; font-weight: 700; font-size: 1rem;">
+                Iniciar Chat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="clientName">Nombre Completo / Entidad / Empresa</label>
+          <input type="text" id="clientName" class="form-input" placeholder="Ej. Ing. Juan Pérez - Municipalidad / Privado" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="clientEmail">Correo Electrónico</label>
+          <input type="email" id="clientEmail" class="form-input" placeholder="contacto@empresa.pe" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="projectType">Servicio Requerido</label>
+          <select id="projectType" class="form-select">
+            <option value="expediente">Elaboración de Expediente Técnico Integral</option>
+            <option value="suelos">Estudio de Mecánica de Suelos / Ensayos de Laboratorio</option>
+            <option value="estructural">Análisis y Diseño Estructural (RNE E.030)</option>
+            <option value="obra">Ejecución o Supervisión de Obra Civil</option>
+            <option value="bim">Modelado BIM y Coordinación Digital 3D</option>
+            <option value="software">Consultoría Tecnológica / Software de Puentes</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="projectBrief">Alcance del Proyecto o Consulta</label>
+          <textarea id="projectBrief" class="form-textarea" placeholder="Indica la ubicación, tipo de infraestructura (vivienda, colegio, saneamiento), área aproximada o ensayos requeridos..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%;">
+          <span>Enviar Solicitud a MANCONS</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- PROJECT DETAILS MODAL LIGHTBOX -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar Ventana">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+
+      <div class="modal-video-wrapper">
+        <video controls playsinline>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="modal-body">
+        <h3 class="modal-title">Título del Proyecto</h3>
+        <div class="modal-meta-bar">Especialidad • Alcance Técnico</div>
+        <p class="modal-description">Descripción detallada de la participación técnica de MANCONS S.A.C.</p>
+
+        <h4 style="font-family: var(--font-display); font-size: 1.1rem; color: #fff; margin-bottom: 0.8rem;">FICHA TÉCNICA DE INGENIERÍA</h4>
+        <table class="modal-specs-table">
+          <!-- Populated dynamically via JS -->
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 0.75rem;">
+          <img src="assets/images/nuevo_logo_mancons.png" alt="MANCONS S.A.C." style="height: 44px; width: auto; object-fit: contain;">
+          <span class="brand-text">MANCONS S.A.C.</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 520px; line-height: 1.7;">
+          Constructora, Consultora de Ingeniería y Laboratorios. Soluciones de infraestructura, estudios geotécnicos y desarrollo de software de ingeniería con sede en Juliaca, San Román, Puno, Perú.
+        </p>
+      </div>
+
+      <!-- Social Media Channels Row in Footer -->
+      <div class="social-links-list">
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@MANCONSCONSTRUCTORA" target="_blank" rel="noopener" class="social-btn yt" title="Canal Oficial de YouTube @MANCONSCONSTRUCTORA">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@mancons.sac?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" class="social-btn tt" title="TikTok Oficial @mancons.sac">
+          <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+
+        <!-- Gmail -->
+        <a href="mailto:mancons.sac@gmail.com" class="social-btn" title="Enviar Correo mancons.sac@gmail.com">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/51917508001?text=Hola%20MANCONS%20S.A.C.,%20deseo%20cotizar%20un%20servicio%20de%20ingenier%C3%ADa" target="_blank" rel="noopener" class="social-btn wa" title="Iniciar Chat por WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 MANCONS S.A.C. Todos los derechos reservados • <a href="https://mancons.github.io/" style="color: var(--color-gold);">mancons.github.io</a></div>
+      <div>
+        <a href="#contacto" style="margin-right: 1rem; color: var(--text-muted);">Libro de Reclamaciones</a>
+        <span>Rumbo a la excelencia técnica.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/card-tilt.js"></script>
+  <script src="js/video-player.js"></script>
+  <script src="js/audio-ambience.js"></script>
+  <script src="js/frame-scrubber.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
